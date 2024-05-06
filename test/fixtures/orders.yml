@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: MyString
+  orderDate: 2024-05-04 17:22:31
+  customer: one
+
+two:
+  status: MyString
+  orderDate: 2024-05-04 17:22:31
+  customer: two
