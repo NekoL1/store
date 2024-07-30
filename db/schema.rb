@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_05_163809) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_05_194754) do
   create_table "categories", force: :cascade do |t|
     t.string "categoryName"
     t.datetime "created_at", null: false
@@ -54,8 +54,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_05_163809) do
     t.string "state"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "Country_id"
-    t.index ["Country_id"], name: "index_locations_on_Country_id"
+    t.integer "country_id"
+    t.index ["country_id"], name: "index_locations_on_country_id"
   end
 
   create_table "order_items", force: :cascade do |t|
@@ -105,7 +105,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_05_163809) do
   add_foreign_key "emails", "users"
   add_foreign_key "inventories", "products"
   add_foreign_key "inventories", "warehouses"
-  add_foreign_key "locations", "Countries"
+  add_foreign_key "locations", "countries"
   add_foreign_key "order_items", "orders"
   add_foreign_key "order_items", "products"
   add_foreign_key "orders", "customers"
