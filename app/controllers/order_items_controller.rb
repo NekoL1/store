@@ -17,6 +17,7 @@ class OrderItemsController < ApplicationController
 
   # GET /order_items/1/edit
   def edit
+    # todo update one order_item
   end
 
   # POST /order_items or /order_items.json
@@ -65,6 +66,6 @@ class OrderItemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def order_item_params
-      params.require(:order_item).permit(:order_id, :product_id, :quantity, :price)
+      params.require(:order_item).permit(:order_id, :product_id, :quantity)
     end
 end
