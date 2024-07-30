@@ -37,6 +37,10 @@ module Api
         end
       end
 
+      def destroy
+
+      end
+
       private
 
       def set_order
