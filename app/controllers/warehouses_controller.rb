@@ -68,3 +68,4 @@ class WarehousesController < ApplicationController
       params.require(:warehouse).permit(:warehouseName)
     end
 end
+#xxxxxxxxx
